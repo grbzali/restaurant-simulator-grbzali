@@ -30,7 +30,7 @@ public class Waiter implements Runnable{
     @Override
     public void run() {
         while(true){
-            while (Restaurant.orders.isEmpty() || Restaurant.ordersReady.isEmpty()){
+            while (Restaurant.orders.isEmpty() && Restaurant.ordersReady.isEmpty()){
                 try {
                     Thread.sleep(10);
                 } catch (InterruptedException e) {
