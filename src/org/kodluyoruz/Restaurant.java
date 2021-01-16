@@ -1,20 +1,19 @@
 package org.kodluyoruz;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class Restaurant {
 
-    public static LinkedBlockingQueue<Order> orders = new LinkedBlockingQueue<>();
-    public static LinkedBlockingQueue<Order> cooks = new LinkedBlockingQueue<>();
+    public static LinkedBlockingQueue<Integer> orders = new LinkedBlockingQueue<>();
+    public static LinkedBlockingQueue<Integer> ordersReceived = new LinkedBlockingQueue<>();
+    public static LinkedBlockingQueue<Integer> ordersReady = new LinkedBlockingQueue<>();
 
+    public void OpenRestaurant(){
 
+    }
+    public boolean isFull(){
 
-
-    Thread thWaiter = new Thread(new Waiter());
-
+        return true;
+    }
 
 }
-
-

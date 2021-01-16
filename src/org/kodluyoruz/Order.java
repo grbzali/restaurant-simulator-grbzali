@@ -1,6 +1,5 @@
 package org.kodluyoruz;
 
-import java.util.concurrent.LinkedBlockingQueue;
 
 public class Order {
 
@@ -31,6 +30,9 @@ public class Order {
         this.orderState = orderState;
     }
 
+    public void createOrder(){
+
+    }
 
 
 }
